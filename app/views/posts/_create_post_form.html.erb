@@ -1,0 +1,27 @@
+<div class="small-10 columns small-centered">
+  <div class="row signup">
+    
+    <%= form_for @post, url: posts_path do |f| %>
+      
+      <%= f.select :flight, @flights %><br>
+      <%= f.text_area :text, placeholder: "Write a post here", maxlength: '140', rows: '3' %><br>
+      
+      <%= label_tag(:satisfied, "Were you satisfied?") %>
+
+	  	<input id = "satisfied" type = "radio" name = "post[satisfied]" value = true>
+		    <label for = "satisfied">
+		  		<img src="https://scontent-a.xx.fbcdn.net/hphotos-xpa1/t1.0-9/10462602_2612795282415_601726830170641479_n.jpg">
+		  	</label>
+
+	  	<input id = "not_satisfied" type = "radio" name = "post[satisfied]" value = false>
+		  	<label for = "not_satisfied">
+		  		<img src="https://fbcdn-sphotos-a-a.akamaihd.net/hphotos-ak-xfa1/t1.0-9/10553588_2612795322416_1835318099286727678_n.jpg">
+		  	</label>
+      
+     
+      <%= f.submit "Flit It!", class: 'button'%> 
+      
+    <% end %>
+  </div>
+  <hr>
+</div>
