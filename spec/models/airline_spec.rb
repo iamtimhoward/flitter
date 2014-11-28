@@ -2,7 +2,7 @@ require 'rails_helper'
 
 RSpec.describe Airline, :type => :model do
   before do
-  	@airline = Airline.new(name: 'examplename')
+    @airline = Airline.new(name: 'examplename')
   end
 
   subject(:airline) { @airline }
