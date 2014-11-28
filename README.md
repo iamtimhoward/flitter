@@ -13,6 +13,7 @@ Flitter is a project which allows users to share their thoughts and satisfaction
 - Rails
 - Foundation
 - jQuery
+- D3.js
 - Flightstats API
 
 ##Credits
